@@ -17,10 +17,9 @@
       <pubDate>Tue, 23 Oct 2018 23:38:54 -0400</pubDate>
       
       <guid>https://pddev.ca/posts/second-post.html</guid>
-      <description>Aka the real first post After much delay for many reasons (lack of experience, material, imposter syndrome, etc&amp;hellip;). I finally decided to launch my personal blog. I&amp;rsquo;m hoping to have this space to share my knowledge, experience and also be a playground for myself.
-This blog is powered by Hugo - an open-source static site generator written in Golang language.
+      <description>Aka the real first post After much delay for many reasons (lack of experience, material, imposter syndrome, etc&amp;hellip;). I finally decided to launch my personal blog. I&amp;rsquo;m hoping to have this space to share my knowledge, experience and also be a playground for myself. This blog is powered by Hugo - an open-source static site generator written in Golang language.
 Pros are plenty for me:
-1. Written in my favorite programming language.</description>
+ Written in my favorite programming language.</description>
     </item>
     
   </channel>
