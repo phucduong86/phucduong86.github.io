@@ -11,11 +11,29 @@
     
     
     <item>
+      <title>Golang</title>
+      <link>https://pddev.ca/categories/golang.html</link>
+      <pubDate>Sun, 04 Nov 2018 00:29:59 -0400</pubDate>
+      
+      <guid>https://pddev.ca/categories/golang.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Personal</title>
       <link>https://pddev.ca/categories/personal.html</link>
       <pubDate>Tue, 23 Oct 2018 23:38:54 -0400</pubDate>
       
       <guid>https://pddev.ca/categories/personal.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>https://pddev.ca/categories/programming.html</link>
+      <pubDate>Sun, 04 Nov 2018 00:29:59 -0400</pubDate>
+      
+      <guid>https://pddev.ca/categories/programming.html</guid>
       <description></description>
     </item>
     
