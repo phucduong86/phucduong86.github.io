@@ -164,12 +164,12 @@ Let&rsquo;s create a function that generate a new image with the given file name
 }
 </code></pre>
 
-<p>What just happend up there? Let&rsquo;s break it down</p>
+<p>The first important line:</p>
 
 <pre><code>myImage := image.NewRGBA(image.Rect(0, 0, width, height))
 </code></pre>
 
-<p>The line of code above create a new RGBA object the satisfies the image.Image interface with the given &ldquo;width&rdquo; and &ldquo;height&rdquo;. All the colors in this image can be accessed via a one dimensional slice <strong>myImage.Pix</strong>.</p>
+<p>The code above create a new RGBA object the satisfies the image.Image interface with the given &ldquo;width&rdquo; and &ldquo;height&rdquo;. All of its colors can be accessed via a one dimensional slice <strong>myImage.Pix</strong>.</p>
 
 <p>Imagine a 3 dimensional 2 pixels by 2 pixels image:</p>
 
@@ -180,10 +180,11 @@ Pixel[3] Pixel[4] Pixel[5]
 <p><strong>myImage.Pix</strong> slice would be a slice with 3 * 2 * 4 = 24 elements where:<br />
 - myImage.Pix[0:4] hold Pixel[0]&rsquo;s R,G,B and A value<br />
 - myImage.Pix[4:8] hold Pixel[1]&rsquo;s R,G,B and A value<br />
-- and so on.<br />
-In the example above, I&rsquo;ve taken the lazy route of setting all the pixels&rsquo; colors to RGBA{122,122,122,122}.<br />
-Obviously, there must be a more efficient way to do this: <code>func (p *RGBA) SetRGBA(x, y int, c color.RGBA)</code>.<br />
-With this method, we can set the full RGBA color value to the pixel at <strong>x, y</strong> coordinate on the image:</p>
+- and so on.</p>
+
+<p>In the example above, I&rsquo;ve taken the lazy route of setting all the pixels&rsquo; colors to RGBA{122,122,122,122}.<br />
+Obviously, there must be a more efficient way to do this, here comes <code>func (p *RGBA) SetRGBA(x, y int, c color.RGBA)</code>.<br />
+With this method, we can set the RGBA color value to the pixel at <strong>x, y</strong> coordinate on the image:</p>
 
 <pre><code>newImg.SetRGBA(0, 0, color.RGBA{255,255,255,255})
 newImg.SetRGBA(0, 1, color.RGBA{0,0,0,255})
@@ -314,7 +315,26 @@ func makeRainbow(filename string, width, height int) {
     </div>
 
     
-        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "pddev-ca.disqus.com" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     
 
      
