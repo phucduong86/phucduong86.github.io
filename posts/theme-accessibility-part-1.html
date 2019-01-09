@@ -7,21 +7,19 @@
         <meta name="description" content="Developer and accessibility enthusiast">
         <meta name="keywords" content="blog,personal,posts,golang,accessibility">
         <meta name="generator" content="Hugo 0.51" />
-        <title> Intro | Phuc Duong&#39;s Blog</title>
-        <meta name="description" content="Intro - Developer and accessibility enthusiast">
-        <meta itemprop="name" content="Intro">
-        <meta itemprop="description" content="Intro - Developer and accessibility enthusiast">
-        <meta property="og:title" content="Intro">
-        <meta property="og:description" content="Intro - Developer and accessibility enthusiast">
+        <title> Theme Accessibility - Quick check | Phuc Duong&#39;s Blog</title>
+        <meta name="description" content="Theme Accessibility - Quick check - Developer and accessibility enthusiast">
+        <meta itemprop="name" content="Theme Accessibility - Quick check">
+        <meta itemprop="description" content="Theme Accessibility - Quick check - Developer and accessibility enthusiast">
+        <meta property="og:title" content="Theme Accessibility - Quick check">
+        <meta property="og:description" content="Theme Accessibility - Quick check - Developer and accessibility enthusiast">
         <meta property="og:image" content="https://www.gravatar.com/avatar/b923b16789a664724d7e17e7ede3add3?size=200">
-        <meta property="og:url" content="https://pddev.ca/tags/intro.html">
-        <meta property="og:site_name" content="Phuc Duong&#39;s Blog"><meta property="og:type" content="website">
+        <meta property="og:url" content="https://pddev.ca/posts/theme-accessibility-part-1.html">
+        <meta property="og:site_name" content="Phuc Duong&#39;s Blog">
+        <meta property="og:type" content="article">
 
         <link rel="icon" type="image/png" href="https://pddev.ca/images/favicon-16x16.png" sizes="16x16">
 
-	
-	  <link href="https://pddev.ca/tags/intro/index.xml" rel="alternate" type="application/rss+xml" title="Phuc Duong&#39;s Blog" />
-	  <link href="https://pddev.ca/tags/intro/index.xml" rel="feed" type="application/rss+xml" title="Phuc Duong&#39;s Blog" />
 	
 
         
@@ -86,11 +84,10 @@
 
         <div class="main container">
             
-    
-    
-        <div class="article-wrapper u-cf">
-            
-                <a class="bubble" href="../posts/second-post.html">
+     
+    <div class="article-wrapper u-cf single">
+        
+            <a class="bubble" href="../posts/theme-accessibility-part-1.html">
     <i class="fa fa-fw fa-pencil"></i>
 </a>
 
@@ -98,11 +95,11 @@
     
 
     <div class="content">
-    <h3><a href="../posts/second-post.html">Hello World</a></h3>
+    <h3><a href="../posts/theme-accessibility-part-1.html">Theme Accessibility - Quick check</a></h3>
     <div class="meta">
         
             
-                <span class="date moment">2018-10-23</span>
+                <span class="date moment">2018-11-09</span>
             
         
 
@@ -111,7 +108,7 @@
         
             <span class="categories">
                 
-                    <a href="../categories/personal">personal</a>
+                    <a href="../categories/accessibility">accessibility</a>
                 
             </span>
         
@@ -122,13 +119,45 @@
     </div>
 
     
-        Aka the real first post After much delay for many reasons (lack of experience, material, imposter syndrome, etc&hellip;). I finally decided to launch my personal blog. I&rsquo;m hoping to have this space to share my knowledge, experience and also be a playground for myself. This blog is powered by Hugo - an open-source static site generator written in Golang language.
-Pros are plenty for me:
- Written in my favorite programming language.
+        
 
-        
-            <a href="../posts/second-post.html" class="more">Continue reading</a>
-        
+<p>Some quick audit on color contrasts.</p>
+
+<p>The current theme I&rsquo;m using is <a href="https://github.com/Lednerb/bilberry-hugo-theme">Bilberry-hugo-theme</a>. This post will only focus on color contrasts issue for a few reasons:
+- It can be visually perceived<br />
+- It is one of the area that automated checker are better at.<br />
+- Small area of focus so that I have room for tips and takeaway.</p>
+
+<h3 id="get-started-with-a-quick-check">Get started with a quick check</h3>
+
+<p>I ran a quick Accessibility Test with <a href="https://wave.webaim.org/">WAVE Accessibility Checker</a>(it comes as a convenient browser extension for Chrome Browser). You can also use their Saas base webtool or Firefox extension.</p>
+
+<p>The first count was 26 color contrast errors that include:<br />
+- The date, catagories, author fields right under each post&rsquo;s title<br />
+- The social icons<br />
+- The link to &ldquo;Continue reading&rdquo;<br />
+- THe footer text</p>
+
+<p>Thanks to the power of Hugo Pipeline, it only took changing a few scss variables to remedy most of the errors.
+All I needed was updating <strong>_variables.scss</strong> with the following:</p>
+
+<pre><code>$meta-text-color: #262626;
+$highlight-color: #344e32;
+</code></pre>
+
+<p>And <strong>_footer.scss</strong> inside <strong>.credits</strong> class with:</p>
+
+<pre><code>color: #293e28;
+</code></pre>
+
+<p>After these changes, the color contrasts on the page start looking pretty good.
+However, another audit from WAVE still shows 4 color contrast errors pointing towards the social icons so I ran the aXe extension from Chrome Browser. The result was as I expected: no color contrasts errors.</p>
+
+<p>After quick inspection using Chrome DevTools, we can get the value of the background and foreground colors.
+The color contrast checker tool from <a href="https://webaim.org/resources/contrastchecker/">WebAIM</a> confirmed that the social icons have color contrast index of 8.62:1 on the white background. We are all good to go.</p>
+
+<p>Take away: automated tools are great but they won&rsquo;t address all the issues on your websites at the most, and there will be false positives as well. Trust yourself when it is an usability issue because if it seems to be an issue for you, it might be an issue for another person too.</p>
+
     
 </div>
 
@@ -141,7 +170,15 @@ Pros are plenty for me:
             <i class="fa fa-tags"></i>
             <div class="links">
                 
-                    <a href="../tags/intro">intro</a>
+                    <a href="../tags/hugo">Hugo</a>
+                
+                    <a href="../tags/bilberry-theme">Bilberry theme</a>
+                
+                    <a href="../tags/automated-accessibility-testing">automated accessibility testing</a>
+                
+                    <a href="../tags/accessibility">accessibility</a>
+                
+                    <a href="../tags/audit">audit</a>
                 
             </div>
         </div>
@@ -152,18 +189,33 @@ Pros are plenty for me:
 
 </article>
 
-            
-        </div>
-    
-
-    
-    <div class="paginator">
-        
-
         
     </div>
 
+    
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "pddev-ca" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    
 
+     
 
         </div>
 
@@ -264,8 +316,7 @@ Pros are plenty for me:
                 
                 by Phuc Duong
             </a>
-	    -
-		<a href="https://pddev.ca/tags/intro/index.xml">RSS</a>
+	    
         </div>
         <div class="author">
             <a href="https://github.com/Lednerb/bilberry-hugo-theme" target="_blank">Bilberry Hugo Theme</a>

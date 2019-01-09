@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Phuc Duong&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Oct 2018 21:15:06 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 09 Nov 2018 15:11:44 -0500</lastBuildDate>
     
 	<atom:link href="https://pddev.ca/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Accessibility</title>
+      <link>https://pddev.ca/tags/accessibility.html</link>
+      <pubDate>Fri, 09 Nov 2018 15:11:44 -0500</pubDate>
+      
+      <guid>https://pddev.ca/tags/accessibility.html</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Algonquin Park</title>
@@ -17,6 +26,42 @@
       <pubDate>Tue, 23 Oct 2018 21:15:06 -0400</pubDate>
       
       <guid>https://pddev.ca/tags/algonquin-park.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Audit</title>
+      <link>https://pddev.ca/tags/audit.html</link>
+      <pubDate>Fri, 09 Nov 2018 15:11:44 -0500</pubDate>
+      
+      <guid>https://pddev.ca/tags/audit.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Automated Accessibility Testing</title>
+      <link>https://pddev.ca/tags/automated-accessibility-testing.html</link>
+      <pubDate>Fri, 09 Nov 2018 15:11:44 -0500</pubDate>
+      
+      <guid>https://pddev.ca/tags/automated-accessibility-testing.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bilberry Theme</title>
+      <link>https://pddev.ca/tags/bilberry-theme.html</link>
+      <pubDate>Fri, 09 Nov 2018 15:11:44 -0500</pubDate>
+      
+      <guid>https://pddev.ca/tags/bilberry-theme.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://pddev.ca/tags/hugo.html</link>
+      <pubDate>Fri, 09 Nov 2018 15:11:44 -0500</pubDate>
+      
+      <guid>https://pddev.ca/tags/hugo.html</guid>
       <description></description>
     </item>
     
