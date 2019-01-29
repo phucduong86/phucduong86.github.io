@@ -6,22 +6,28 @@
     <description>Recent content in Posts on Phuc Duong&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Nov 2018 15:11:44 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 22 Jan 2019 00:08:06 -0500</lastBuildDate>
     
 	<atom:link href="https://pddev.ca/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Theme Accessibility - Quick check</title>
+      <title>Bilberry Hugo Theme Accessibility Part 2</title>
+      <link>https://pddev.ca/posts/theme-accessibility-part-2.html</link>
+      <pubDate>Tue, 22 Jan 2019 00:08:06 -0500</pubDate>
+      
+      <guid>https://pddev.ca/posts/theme-accessibility-part-2.html</guid>
+      <description>&lt;p&gt;Quick work on links to article with &lt;a href=&#34;https://github.com/Lednerb/bilberry-hugo-theme&#34;&gt;Bilberry-hugo-theme&lt;/a&gt;.&lt;br /&gt;
+Improve on accessibility by removing redundant links to the same location.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Bilberry Hugo Theme Accessibility - Part 1</title>
       <link>https://pddev.ca/posts/theme-accessibility-part-1.html</link>
       <pubDate>Fri, 09 Nov 2018 15:11:44 -0500</pubDate>
       
       <guid>https://pddev.ca/posts/theme-accessibility-part-1.html</guid>
-      <description>Some quick audit on color contrasts.
-The current theme I&amp;rsquo;m using is Bilberry-hugo-theme. This post will only focus on color contrasts issue for a few reasons: - It can be visually perceived
-- It is one of the area that automated checker are better at.
-- Small area of focus so that I have room for tips and takeaway.
-Get started with a quick check I ran a quick Accessibility Test with WAVE Accessibility Checker(it comes as a convenient browser extension for Chrome Browser).</description>
+      <description>&lt;p&gt;Some quick audit on color contrasts with &lt;a href=&#34;https://github.com/Lednerb/bilberry-hugo-theme&#34;&gt;Bilberry-hugo-theme&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>

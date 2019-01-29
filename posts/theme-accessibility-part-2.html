@@ -7,21 +7,19 @@
         <meta name="description" content="Developer and accessibility enthusiast">
         <meta name="keywords" content="blog,personal,posts,golang,accessibility">
         <meta name="generator" content="Hugo 0.51" />
-        <title> Audit | Phuc Duong&#39;s Blog</title>
-        <meta name="description" content="Audit - Developer and accessibility enthusiast">
-        <meta itemprop="name" content="Audit">
-        <meta itemprop="description" content="Audit - Developer and accessibility enthusiast">
-        <meta property="og:title" content="Audit">
-        <meta property="og:description" content="Audit - Developer and accessibility enthusiast">
+        <title> Bilberry Hugo Theme Accessibility Part 2 | Phuc Duong&#39;s Blog</title>
+        <meta name="description" content="Bilberry Hugo Theme Accessibility Part 2 - Developer and accessibility enthusiast">
+        <meta itemprop="name" content="Bilberry Hugo Theme Accessibility Part 2">
+        <meta itemprop="description" content="Bilberry Hugo Theme Accessibility Part 2 - Developer and accessibility enthusiast">
+        <meta property="og:title" content="Bilberry Hugo Theme Accessibility Part 2">
+        <meta property="og:description" content="Bilberry Hugo Theme Accessibility Part 2 - Developer and accessibility enthusiast">
         <meta property="og:image" content="https://www.gravatar.com/avatar/b923b16789a664724d7e17e7ede3add3?size=200">
-        <meta property="og:url" content="https://pddev.ca/tags/audit.html">
-        <meta property="og:site_name" content="Phuc Duong&#39;s Blog"><meta property="og:type" content="website">
+        <meta property="og:url" content="https://pddev.ca/posts/theme-accessibility-part-2.html">
+        <meta property="og:site_name" content="Phuc Duong&#39;s Blog">
+        <meta property="og:type" content="article">
 
         <link rel="icon" type="image/png" href="https://pddev.ca/images/favicon-16x16.png" sizes="16x16">
 
-	
-	  <link href="https://pddev.ca/tags/audit/index.xml" rel="alternate" type="application/rss+xml" title="Phuc Duong&#39;s Blog" />
-	  <link href="https://pddev.ca/tags/audit/index.xml" rel="feed" type="application/rss+xml" title="Phuc Duong&#39;s Blog" />
 	
 
         
@@ -86,11 +84,10 @@
 
         <div class="main container">
             
-    
-    
-        <div class="article-wrapper u-cf">
+     
+    <div class="article-wrapper u-cf single">
+        
             
-                
 <article class="default article">
     
 
@@ -122,9 +119,11 @@
         <p>Quick work on links to article with <a href="https://github.com/Lednerb/bilberry-hugo-theme">Bilberry-hugo-theme</a>.<br />
 Improve on accessibility by removing redundant links to the same location.</p>
 
-        
-            <a href="../posts/theme-accessibility-part-2.html" class="more">Continue reading</a>
-        
+<p>Now that I&rsquo;ve removed the link to &ldquo;Phuc Duong&rsquo;s Blog&rdquo; header. User can get to my the main content in 4 Tabs (I do intend on eventually have a Skip to Main shortcut when the site grows, it is quite acceptable for a small hobby site at the moment.)</p>
+
+<p>From here, unfortunately user will have to tab 3 times to get to my next article in the list. In fact, with the links to categories and tags, 3 would be the minimum amount of tabs. I&rsquo;m hoping to make remove 2 of the links and the 3rd one seems to be the best option to keep (with some little tweaks).</p>
+
+<p>Since the link bubble is gone, there is no reason to keep the bubble itself either. Now I can trim down the whole left side of the page, and expand the main content to full page width. I believe the bubbles were there to differentiate the different type of contents (article, music, galerry&hellip;). So I&rsquo;ll have to come up with a more universal alternative later.</p>
     
 </div>
 
@@ -156,88 +155,33 @@ Improve on accessibility by removing redundant links to the same location.</p>
 
 </article>
 
-            
-        </div>
-    
-        <div class="article-wrapper u-cf">
-            
-                
-<article class="default article">
-    
-
-    <div class="content">
-    <h3>Bilberry Hugo Theme Accessibility - Part 1</h3>
-    <div class="meta">
-        
-            
-                <span class="date moment">2018-11-09</span>
-            
-        
-
-        
-
-        
-            <span class="categories">
-                
-                    <a href="../categories/accessibility">accessibility</a>
-                
-            </span>
-        
-
-        
-            <span class="author"><a href="../author/phuc-duong">Phuc Duong</a></span>
         
     </div>
 
     
-        <p>Some quick audit on color contrasts with <a href="https://github.com/Lednerb/bilberry-hugo-theme">Bilberry-hugo-theme</a>.</p>
-
-        
-            <a href="../posts/theme-accessibility-part-1.html" class="more">Continue reading</a>
-        
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
     
-</div>
-
     
-<div class="footer">
-
-
     
-        <div class="tags">
-            <i class="fa fa-tags"></i>
-            <div class="links">
-                
-                    <a href="../tags/hugo">Hugo</a>
-                
-                    <a href="../tags/bilberry-theme">Bilberry theme</a>
-                
-                    <a href="../tags/automated-accessibility-testing">automated accessibility testing</a>
-                
-                    <a href="../tags/accessibility">accessibility</a>
-                
-                    <a href="../tags/audit">audit</a>
-                
-            </div>
-        </div>
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "pddev-ca" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
     
 
-    
-</div>
-
-</article>
-
-            
-        </div>
-    
-
-    
-    <div class="paginator">
-        
-
-        
-    </div>
-
-
+     
 
         </div>
 
@@ -342,8 +286,7 @@ Improve on accessibility by removing redundant links to the same location.</p>
                 
                 by Phuc Duong
             </a>
-	    -
-		<a href="https://pddev.ca/tags/audit/index.xml">RSS</a>
+	    
         </div>
         <div class="author">
             <a href="https://github.com/Lednerb/bilberry-hugo-theme" target="_blank">Bilberry Hugo Theme</a>
